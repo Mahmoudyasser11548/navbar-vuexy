@@ -2,6 +2,7 @@
   "name": "@navbar/vuexy-navbar",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
