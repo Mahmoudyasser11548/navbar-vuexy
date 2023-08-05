@@ -1,7 +1,9 @@
-@import './variables';
-@import './variables-dark';
-@import './mixins/navs';
-@import 'bootstrap/scss/mixins'; // Bootstrap core mixins
+@import "./variables";
+@import "./variables-dark";
+@import "./mixins/navs";
+@import "bootstrap/scss/mixins"; // Bootstrap core mixins
+@import './functions';
+// Component nav and nav/pill tabs
 
 .nav {
   border-radius: 0.25rem;

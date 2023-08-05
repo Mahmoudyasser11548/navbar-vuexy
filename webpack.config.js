@@ -16,7 +16,7 @@ export default (webpackConfigEnv, argv) => {
         // Add SCSS rule
         {
           test: /\.scss$/,
-          use: ["style-loader", "css-loader", "sass-loader"],
+          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         },
       ],
     },
@@ -27,8 +27,5 @@ export default (webpackConfigEnv, argv) => {
         chunkFilename: "[id].css",
       }),
     ],
-    resolve: {
-      extensions: [".scss"], // Add the .scss extension for resolving imports
-    },
   });
 };

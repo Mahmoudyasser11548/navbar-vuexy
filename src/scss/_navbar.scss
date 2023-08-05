@@ -1,6 +1,6 @@
-@import './variables';
-@import './variables-dark';
-@import 'bootstrap/scss/mixins'; // Bootstrap core mixins
+@import "./variables";
+@import "./variables-dark";
+@import "bootstrap/scss/mixins"; // Bootstrap core mixins
 
 @function set-navbar-text-color($color) {
   @if (lightness($color) > 50) {

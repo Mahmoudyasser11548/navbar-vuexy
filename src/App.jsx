@@ -1,7 +1,7 @@
-import ThemeNavbar from './components/Navbar'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.scss'
-import { BrowserRouter } from 'react-router-dom';
+import ThemeNavbar from "./components/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+import "./App.scss";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <ThemeNavbar />
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
