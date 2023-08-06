@@ -1,11 +1,10 @@
-import singleSpaDefaults from "webpack-config-single-spa-react";
 import { merge } from "webpack-merge";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import singleSpaDefaults from "webpack-config-single-spa-react";
 
 export default (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
     orgName: "navbar",
-    projectName: "vuexy-navbar",
+    projectName: "navbar-vuexy",
     webpackConfigEnv,
     argv,
   });
@@ -13,19 +12,16 @@ export default (webpackConfigEnv, argv) => {
   return merge(defaultConfig, {
     module: {
       rules: [
-        // Add SCSS rule
         {
           test: /\.scss$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+          use: [
+            "style-loader",
+            "css-loader",
+            "sass-loader",
+          ],
         },
       ],
     },
-    plugins: [
-      // Add MiniCssExtractPlugin
-      new MiniCssExtractPlugin({
-        filename: "[name].css",
-        chunkFilename: "[id].css",
-      }),
-    ],
+    // modify the webpack config however you'd like to by adding to this object
   });
 };

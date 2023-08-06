@@ -1,13 +1,13 @@
-$btn-font-size: 1rem;
-$nav-component-border-color: #ddd !default;
-$dropdown-border-radius: 0.357rem !default;
-$sidebar-width: 260px !default;
-$nav-pills-link-active-bg: #7367f0;
-$navbar-height: 4.45rem !default;
-$content-padding: 2rem !default;
-// vertical menu
-$menu-expanded-width: 260px !default;
-$menu-collapsed-width: 80px !default;
+//  ================================================================================================
+//  File Name: variables.scss
+//  Description: Custom overrides of Bootstrap variables
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Author: PIXINVENT
+//  Author URL: http://www.themeforest.net/user/pixinvent
+//  ================================================================================================
+
+// (c) = are custom variables for vuexy template
 
 // Color system
 
@@ -41,21 +41,6 @@ $dark: #4b4b4b !default;
 
 $min-contrast-ratio: 3 !default;
 
-//  -------------------------------
-//    Avatar
-//  -------------------------------
-
-$avatar-size: 32px !default;
-$avatar-status-size: 11px !default;
-$avatar-status-size-lg: 17px !default;
-
-$avatar-size-xl: 70px !default;
-$avatar-size-lg: 50px !default;
-$avatar-size-sm: 24px !default;
-
-$avatar-bg: #c3c3c3;
-$avatar-group-border: $white;
-
 // Spacing
 //
 // Control the default styling of most Bootstrap elements by modifying these
@@ -69,8 +54,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
-)!default;
+  xxl: 1440px // Custom xxl size
+) !default;
 
 $container-max-widths: (
   xs: 0,

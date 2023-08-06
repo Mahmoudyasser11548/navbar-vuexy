@@ -25,7 +25,7 @@ import {
 } from "reactstrap";
 
 // ** Default Avatar Image
-import defaultAvatar from "../assets/images/avatar-s-11.jpg";
+import defaultAvatar from "../../assets/avatar-s-11.jpg";
 
 const UserDropdown = () => {
   return (
@@ -48,7 +48,7 @@ const UserDropdown = () => {
         />
       </DropdownToggle>
       <DropdownMenu end>
-        <DropdownItem tag={Link} to="/" onClick={(e) => e.preventDefault()}>
+        <DropdownItem onClick={(e) => e.preventDefault()}>
           <User size={14} className="me-75" />
           <span className="align-middle">Profile</span>
         </DropdownItem>

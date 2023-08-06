@@ -9,6 +9,7 @@ import classnames from "classnames";
 import { Badge } from "reactstrap";
 
 const Avatar = forwardRef((props, ref) => {
+  // ** Props
   const {
     img,
     size,
