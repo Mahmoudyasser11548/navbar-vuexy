@@ -1,6 +1,6 @@
 // ** Redux Imports
 import { configureStore } from "@reduxjs/toolkit"
-import layout from "./layout"
+import layout from "./layout.js"
 
 const store = configureStore({
   reducer: {layout},
